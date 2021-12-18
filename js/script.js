@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
-    fetch("https://raw.githubusercontent.com/yangnana11/yangnana11.github.io/master/data/projects/projects.json")
+    fetch("data/projects/projects.json")
     .then(r=>r.json())
     .then(r=>{
         if (r.length>0) {
