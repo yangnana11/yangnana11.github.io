@@ -135,19 +135,19 @@
         "skills": "HTML, CSS, JS, JQuery, PHP, NodeJS",
         "img": {
             "main": {
-                "link": "data/projects/next-ico/thumbnail-mobile.jpg",
+                "link": "data/projects/superhairpieces/thumbnail-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/next-ico/thumbnail-mobile.webp",
+                "link": "data/projects/superhairpieces/thumbnail-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/next-ico/thumbnail-pc.jpg",
+                "link": "data/projects/superhairpieces/thumbnail-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/next-ico/thumbnail-pc.webp",
+                "link": "data/projects/superhairpieces/thumbnail-pc.webp",
                 "type": "image/webp"
             }
         }
@@ -158,19 +158,19 @@
         "skills": "HTML, CSS, JS, JQuery, PHP",
         "img": {
             "main": {
-                "link": "data/projects/next-ico/thumbnail-mobile.jpg",
+                "link": "data/projects/nowon/thumbnail-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/next-ico/thumbnail-mobile.webp",
+                "link": "data/projects/nowon/thumbnail-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/next-ico/thumbnail-pc.jpg",
+                "link": "data/projects/nowon/thumbnail-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/next-ico/thumbnail-pc.webp",
+                "link": "data/projects/nowon/thumbnail-pc.webp",
                 "type": "image/webp"
             }
         }
