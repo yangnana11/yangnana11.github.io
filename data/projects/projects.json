@@ -51,11 +51,11 @@
         "skills": "ReactJS, Blockchain",
         "img": {
             "main": {
-                "link": "data/projects/API/thumbnail-mobile.jpg",
+                "link": "data/projects/block-explorer/thumbnail-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/API/thumbnail-mobile.webp",
+                "link": "data/projects/block-explorer/thumbnail-mobile.webp",
                 "type": "image/webp"
             }
         }
