@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
-    fetch("data/projects/projects.json")
+    fetch("data/projects/projects1.json")
     .then(r=>r.json())
     .then(r=>{
         if (r.length>0) {
