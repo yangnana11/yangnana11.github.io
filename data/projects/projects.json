@@ -1,0 +1,24 @@
+[
+    {
+        "name": "void detection",
+        "skills": "LabView",
+        "img": {
+            "main": {
+                "link": "data/projects/void-detection/thumbnail-mobile.jpg",
+                "type": "image/jpeg"
+            },
+            "alt": {
+                "link": "data/projects/void-detection/thumbnail-mobile.webp",
+                "type": "image/webp"
+            },
+            "pc-main": {
+                "link": "data/projects/void-detection/thumbnail-pc.jpg",
+                "type": "image/jpeg"
+            },
+            "pc-alt": {
+                "link": "data/projects/void-detection/thumbnail-pc.webp",
+                "type": "image/webp"
+            }
+        }
+    }
+]
