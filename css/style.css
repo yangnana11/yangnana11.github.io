@@ -1,69 +1,75 @@
-:root {
-    --border-color: #f92c85;
-    --text-color: #5ebec4;
-    --background-color: #fdf5df;
-    --section-margin: 3rem;
-    --element-margin: 1rem;
-    --border-radius: 20px;
-    --font-large1: 28px;
-    --font-large2: 26px;
-    --font-normal: 16px;
-    --font-small: 14px;
-}
-.container {
-    padding: var(--section-margin);
-    font-family: 'Fira Code', monospace;
-    background-color: var(--background-color);
-}
+@import url('settings.css');
 * {
     box-sizing: border-box;
 }
 html, body {
     width: 100%;
     height: 100%;
+    margin: 0;
+    font-family: var(--font-family);
+    position: relative;
+}
+.container {
+    z-index: 1;
+    position: relative;
+}
+section {
+    padding: var(--section-margin);
 }
 .top-page {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: var(--section-margin) 0 calc(var(--section-margin) + 50px);
+    background-color: var(--color4);
+    color: var(--color2);    
 }
 .page-heading {
-    font-size: var(--font-large1);
+    font-size: 50px;
     text-transform: uppercase;
     margin-bottom: var(--element-margin);
-    color: var(--text-color);
+    color: var(--color3);
     font-weight: normal;
     text-align: center;
+    font-family: var(--font-family2);
+    font-style: italic;
 }
 .page-desp {
-    color: var(--text-color);
+    color: var(--color5);
     text-align: center;
 }
 .job-title-group-wrapper {
-    color: var(--border-color);
+    /* color: var(--border-color); */
+    color: var(--color2);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--color2);
+
     overflow: hidden;
     height: 21px;
     display: inline-block;
     transform: translateY(5px);
 }
 .job-title-group {
-    animation: job-transform 10s linear infinite;    
+    animation: job-transform 12s infinite;    
     text-align: center;
 }
+.job-title-group div {
+    margin: 2px 0;
+}
 @keyframes job-transform {
-    0%, 100% {
+    0% {
         transform: translateY(0);
     }
-    16.7%, 83.4% {
-        transform: translateY(-21px);
+    10%, 20% {
+        transform: translateY(-20px);
     }
-    33.4%, 66.7% {
-        transform: translateY(-42px);
+    40%, 50% {
+        transform: translateY(-40px);
     }
-    50% {
-        transform: translateY(-64px);
+    65%, 75% {
+        transform: translateY(-60px);
+    }
+    90%, 100% {
+        transform: translateY(-80px);
     }
 }
 .project-wrapper:not(:first-child) {
@@ -74,13 +80,14 @@ html, body {
     grid-template-columns: 60% 40%;
     align-items: center;
     justify-content: center; */
-    color: var(--text-color);
+    color: var(--color1);
     position: relative;
     padding: var(--element-margin);
     margin-bottom: var(--element-margin);
 
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--color4);
     border-radius: var(--border-radius);
+    padding-top: 3rem;
 }
 /* .project-content-wrapper::before {
     content: "";
@@ -97,16 +104,331 @@ html, body {
     margin-bottom: var(--element-margin);
     font-size: var(--font-normal);
     text-align: center;
+    word-wrap: break-word;    
 }
 .project-content-wrapper picture {
     z-index: 1;
+    position: relative;
+    cursor: pointer;
 }
 .project-content-wrapper img {
-    width: 100%;
+    width: var(--picture-width);
     height: auto;
 }
 .project-content-wrapper .detail {
     /* padding-right: var(--element-margin); */
     font-size: var(--font-small);
     margin-bottom: var(--element-margin);
+}
+.workplace-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.workplace-wrapper .timeline {
+    padding: calc(var(--element-margin) / 2) 0 calc(var(--element-margin) / 2) 0;
+    font-size: var(--font-xsmall);
+    line-height: var(--font-normal);
+    vertical-align: middle;
+}
+.workplace-wrapper .wp-name {
+    padding: calc(var(--element-margin) / 2) 0 calc(var(--element-margin) / 3);
+    font-size: var(--font-normal);
+    position: relative;
+}
+.workplace-wrapper .wp-job {
+    font-size: var(--font-small);
+    margin-bottom: var(--element-margin);
+    font-style: italic;
+}
+/* .workplace-wrapper .wp-name::after {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 10.5px);
+    background-image: url("../data/images/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9;
+} */
+.workplace-wrapper div:nth-child(n+3) {
+    border-top: 1px solid var(--color4);
+}
+.section-title {
+    font-size: var(--font-large2);
+    margin-bottom: var(--element-margin);
+    color: var(--color1);
+    text-transform: capitalize;
+}
+.section-title::after {
+    content: ".";
+    display: inline-block;
+    margin-left: 5px;
+}
+section .item {
+    position: relative;
+}
+section .item::before {
+    position: absolute;
+    content: "";
+    width: 4rem;
+    left: 1rem;
+    height: 1.5rem;
+    top: 0.5rem;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 21'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23ff5350'/%3E%3Ccircle cx='40' cy='10' r='10' fill='%23ffb33d'/%3E%3Ccircle cx='70' cy='10' r='10' fill='%2300c245'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+section .item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color4);
+    top: 2rem;
+}
+.social-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+section[social], section[code-challenge] {
+    background-color: var(--color4);
+}
+section[social] img {
+    margin-left: 10px;
+    height: 20px;
+}
+.project-arrow-container {
+    display: none;
+}
+.job-content {
+    position: fixed;    
+    left: 0;
+    top: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--section-margin);
+    background-color: var(--color6);    
+    transition: all 0.3s ease;
+    opacity: 0;
+    z-index: -1;
+    max-height: 0;
+}
+.job-content.shown{
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    z-index: 3;
+    height: auto;
+    max-height: fit-content;
+}
+.job-content .job-content-image-wrap {
+    display: grid;
+    grid-gap: var(--element-margin);
+}
+.job-content .job-content-image-wrap.pc-only img, .job-content .job-content-image-wrap.pc-only video{
+    display: none;
+}
+.job-content-image-wrap.mobile-only {
+    max-width: 575px;
+    margin: 0 auto;
+}
+.job-content .job-content-image-wrap.pc-only::before {
+    content: "This content is only work for PC version. Please open PC to see the demo";
+    display: block;
+}
+.job-content .job-content-image-wrap video, .job-content .job-content-image-wrap img {
+    width: 100%;
+    border: 2px solid var(--color4);
+    border-radius: var(--border-radius);
+}
+.job-content video[pc] {
+    display: none;
+}
+.job-content h3{
+    color: var(--color4);
+    padding-left: 50px;
+    text-align: right;
+    margin-bottom: var(--section-margin);
+}
+main.container.hide {
+    opacity: 0;
+    max-height: 1px;
+    overflow: hidden;
+}
+.job-content-close {
+    position: absolute;
+    top: var(--section-margin);
+    left: var(--section-margin);
+    display: block;
+}
+.job-content-close::before {
+    content: "Back";
+    position: absolute;
+    left: 30px;
+    top: 20px;    
+    transition: all 0.25s ease;    
+    cursor: pointer;
+}
+.job-content-close::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.25s ease;
+    background-image: url("../data/images/arrow1.svg");
+    background-size: contain;
+    display: block;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.job-content-close:hover::after{
+    transform: translateX(-10px) rotate(180deg);
+}
+@media (min-width: 600px) {
+    :root {
+        --picture-width: calc(50vw - var(--section-margin) - var(--element-margin));
+        --font-large1: 36px;
+        --font-large2: 32px;
+        --font-normal: 23px;
+        --font-small: 18px;
+        --font-xsmall: 16px;
+    }
+    /* .project-content-wrapper {
+        width: calc(100% - var(--picture-width) / 2);
+        padding-right: calc(var(--element-margin) + var(--picture-width) / 2);
+        min-width: calc(var(--picture-width) + 100px);
+    } */
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--element-margin);
+    }
+    .project-content-wrapper {
+        overflow: hidden;        
+        padding-bottom: calc(7 * var(--element-margin));
+    }
+    .project-content-wrapper img {        
+        /* top: 50%;
+        transform: translateY(-50%); */                
+        object-fit: cover;
+        object-position: center;     
+        width: 100%;  
+    }
+    .project-content-wrapper picture {
+        position: relative;
+        position: absolute;
+        right: 0;
+        top: calc(2rem + 2px);
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        filter: blur(5px);
+    }
+    .project-content-wrapper picture::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.30);
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        -moz-filter: blur(20px);
+        -o-filter: blur(20px);
+        -ms-filter: blur(20px);
+
+    }
+    .project-content-wrapper .detail {
+        z-index: 2;
+        position: relative;
+        /* background: linear-gradient(to right, var(--color1) calc(50% + var(--element-margin)), var(--color2) calc(50% + var(--element-margin)));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+        color: var(--color2);
+        padding-top: calc(var(--element-margin) * 2);
+    }
+    .project-content-wrapper .detail div:not(.title) {
+        display: none;
+    }
+    .project-content-wrapper .detail .title {
+        font-size: var(--font-large1);
+        text-shadow: 1px 3px 4px rgba(98,98,98,0.6);
+    }
+    .project-arrow-container {
+        display: block;
+        width: 45px;
+        height: 45px;              
+        position: absolute;
+        left: calc(50% - 15px);
+        bottom: var(--element-margin);    
+        border-radius: 50%;   
+        z-index: 99;       
+        cursor: pointer; 
+    }
+    .project-arrow-container::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.25s ease;
+        background-color: var(--color2);
+        box-shadow: inset 0 0 0 60px rgba(0,0,0,0.75);
+        border-radius: 50%;
+    }
+    .project-arrow-container::after {
+        content:"";
+        position: absolute;
+        left: 9px;
+        top: 7px;
+        width: 30px;
+        height: 30px;
+        transition: all 0.25s ease;
+        background-image: url("../data/images/arrow2.svg");
+        background-size: contain;
+        display: block;
+    }
+    .project-arrow-container:hover::before {
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,0.75);
+    }
+    .project-arrow-container:hover::after {
+        background-image: url("../data/images/arrow1.svg");
+    }
+    .project-arrow-container img {
+        width: 30px;
+        height: auto;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+    }
+    .workplace-wrapper {
+        grid-template-columns: 180px 1fr;
+    }
+    .workplace-wrapper .wp-name {
+        padding-bottom: calc(var(--element-margin) / 2);
+    }
+    /* .workplace-wrapper .wp-name::after {
+        top: calc(50% - 15px);
+        width: 30px;
+        height: 30px;
+    } */
+}
+@media (min-width:800px) {
+    .job-content .job-content-image-wrap.pc-only img, .job-content .job-content-image-wrap.pc-only video {
+        display: block;
+    }
+    .job-content .job-content-image-wrap.pc-only::before {
+        display: none;
+    }
 }

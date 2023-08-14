@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+:root {
+    --border-color: #f92c85;
+    --text-color: #5ebec4;
+    --background-color: #fdf5df;
+    --color1: #1f1235;
+    --color2: #f1f1f3;
+    --color3: #ff6e6c;
+    --color4: #67568c;
+    --color5: #fbdd74;
+    --color6: #f8e8ae;
+    --section-margin: 2.3rem;
+    --element-margin: 1.3rem;
+    --border-radius: 20px;
+    --font-large1: 28px;
+    --font-large2: 26px;
+    --font-normal: 16px;
+    --font-small: 14px;
+    --font-xsmall: 12px;
+    --font-family: 'Comfortaa', cursive;
+    --font-family2: 'Caramel', cursive;
+    --picture-width: 100%;
+}
