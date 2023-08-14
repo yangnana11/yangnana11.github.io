@@ -1,89 +1,118 @@
 [
     {
-        "name": "void detection",
-        "key": "void-detection",
-        "skills": "LabView",
-        "img": {
+        "name": "superhairpieces",
+        "key": "superhairpieces",
+        "skills": "HTML, CSS, JS, JQuery, PHP, NodeJS, AWS, MySQL, RestAPI, Chrome Extension, BigCommerce, HandleBars, GraphQL",
+        "url": "www.superhairpieces.com",
+        "thumbnails": {
             "main": {
-                "link": "data/projects/void-detection/thumbnail-mobile.jpg",
+                "link": "data/projects/superhairpieces/thumbnail-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/void-detection/thumbnail-mobile.webp",
+                "link": "data/projects/superhairpieces/thumbnail-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/void-detection/thumbnail-pc.jpg",
+                "link": "data/projects/superhairpieces/thumbnail-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/void-detection/thumbnail-pc.webp",
+                "link": "data/projects/superhairpieces/thumbnail-pc.webp",
                 "type": "image/webp"
             }
         }
-    },
-    {
-        "name": "api",
-        "key": "api",
-        "skills": "PHP, BlockChain, Bitcoin",
-        "img": {
+    },{
+        "name": "privy",
+        "key": "privy",
+        "skills": "DJango, PHP, HTML, CSS, JQuery, RestAPI, Liquid, Shopify",
+        "url": "privyusa.com",
+        "thumbnails": {
             "main": {
-                "link": "data/projects/API/success-mobile.jpg",
+                "link": "data/projects/privyusa/thumbnail-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/API/success-mobile.webp",
+                "link": "data/projects/privyusa/thumbnail-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/API/success-pc.jpg",
+                "link": "data/projects/privyusa/thumbnail-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/API/success-pc.webp",
+                "link": "data/projects/privyusa/thumbnail-pc.webp",
                 "type": "image/webp"
             }
         }
-    },
-    {
-        "name": "block explorer",
-        "key": "block-exporer",
-        "skills": "ReactJS, Blockchain",
-        "img": {
+    },{
+        "name": "chrome extension",
+        "key": "chrome",
+        "skills": "JS, NodeJS, Chrome API, Chrome Extension",
+        "thumbnails": {
             "main": {
-                "link": "data/projects/block-explorer/thumbnail.jpg",
+                "link": "data/projects/superhairpieces-extension/thumbnail-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/block-explorer/thumbnail.webp",
-                "type": "image/webp"
-            }
-        }
-    },
-    {
-        "name": "cordova mobile apps",
-        "key": "cordova-mobile-apps",
-        "skills": "Cordova, mobile, HTML, css, JS",
-        "img": {
-            "main": {
-                "link": "data/projects/cordova-mobile-apps/tracker-mobile.jpg",
-                "type": "image/jpeg"
-            },
-            "alt": {
-                "link": "data/projects/cordova-mobile-apps/tracker-mobile.webp",
+                "link": "data/projects/superhairpieces-extension/thumbnail-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/cordova-mobile-apps/tracker-pc.jpg",
+                "link": "data/projects/superhairpieces-extension/thumbnail-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/cordova-mobile-apps/tracker-pc.webp",
+                "link": "data/projects/superhairpieces-extension/thumbnail-pc.webp",
                 "type": "image/webp"
             }
         }
-    },
-    {
+    },{
+        "name": "nowon",
+        "key": "nowon",
+        "skills": "HTML, CSS, JS, JQuery, PHP, RestAPI",
+        "url": "nowonpay.kr",
+        "img": {
+            "main": {
+                "link": "data/projects/nowon/thumbnail-mobile.jpg",
+                "type": "image/jpeg"
+            },
+            "alt": {
+                "link": "data/projects/nowon/thumbnail-mobile.webp",
+                "type": "image/webp"
+            },
+            "pc-main": {
+                "link": "data/projects/nowon/thumbnail-pc.jpg",
+                "type": "image/jpeg"
+            },
+            "pc-alt": {
+                "link": "data/projects/nowon/thumbnail-pc.webp",
+                "type": "image/webp"
+            }
+        }
+    },{
+        "name": "next ico",
+        "key": "next-ico",
+        "skills": "React-Native",
+        "img": {
+            "main": {
+                "link": "data/projects/next-ico/thumbnail-mobile.jpg",
+                "type": "image/jpeg"
+            },
+            "alt": {
+                "link": "data/projects/next-ico/thumbnail-mobile.webp",
+                "type": "image/webp"
+            },
+            "pc-main": {
+                "link": "data/projects/next-ico/thumbnail-pc.jpg",
+                "type": "image/jpeg"
+            },
+            "pc-alt": {
+                "link": "data/projects/next-ico/thumbnail-pc.webp",
+                "type": "image/webp"
+            }
+        }
+    },{
         "name": "hycon",
         "key": "hycon",
         "skills": "HTML, CSS, JS, JQuery",
@@ -105,72 +134,83 @@
                 "type": "image/webp"
             }
         }
-    },
-    {
-        "name": "next ico",
-        "key": "next-ico",
-        "skills": "HTML, CSS, JS, JQuery, React-Native",
+    },{
+        "name": "cordova mobile apps",
+        "key": "cordova",
+        "skills": "Cordova",
         "img": {
             "main": {
-                "link": "data/projects/next-ico/thumbnail-mobile.jpg",
+                "link": "data/projects/cordova-mobile-apps/tracker-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/next-ico/thumbnail-mobile.webp",
+                "link": "data/projects/cordova-mobile-apps/tracker-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/next-ico/thumbnail-pc.jpg",
+                "link": "data/projects/cordova-mobile-apps/tracker-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/next-ico/thumbnail-pc.webp",
+                "link": "data/projects/cordova-mobile-apps/tracker-pc.webp",
                 "type": "image/webp"
             }
         }
-    },
-    {
-        "name": "superhairpieces",
-        "key": "superhairpieces",
-        "skills": "HTML, CSS, JS, JQuery, PHP, NodeJS",
+    },{
+        "name": "block explorer",
+        "key": "block-exporer",
+        "skills": "ReactJS, Blockchain, TypeScript",
         "img": {
             "main": {
-                "link": "data/projects/superhairpieces/thumbnail-mobile.jpg",
+                "link": "data/projects/block-explorer/thumbnail.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/superhairpieces/thumbnail-mobile.webp",
-                "type": "image/webp"
-            },
-            "pc-main": {
-                "link": "data/projects/superhairpieces/thumbnail-pc.jpg",
-                "type": "image/jpeg"
-            },
-            "pc-alt": {
-                "link": "data/projects/superhairpieces/thumbnail-pc.webp",
+                "link": "data/projects/block-explorer/thumbnail.webp",
                 "type": "image/webp"
             }
         }
-    },
-    {
-        "name": "nowon",
-        "key": "nowon",
-        "skills": "HTML, CSS, JS, JQuery, PHP",
+    },{
+        "name": "api",
+        "key": "api",
+        "skills": "PHP, BlockChain, Bitcoin, RestAPI",
         "img": {
             "main": {
-                "link": "data/projects/nowon/thumbnail-mobile.jpg",
+                "link": "data/projects/api/success-mobile.jpg",
                 "type": "image/jpeg"
             },
             "alt": {
-                "link": "data/projects/nowon/thumbnail-mobile.webp",
+                "link": "data/projects/api/success-mobile.webp",
                 "type": "image/webp"
             },
             "pc-main": {
-                "link": "data/projects/nowon/thumbnail-pc.jpg",
+                "link": "data/projects/api/success-pc.jpg",
                 "type": "image/jpeg"
             },
             "pc-alt": {
-                "link": "data/projects/nowon/thumbnail-pc.webp",
+                "link": "data/projects/api/success-pc.webp",
+                "type": "image/webp"
+            }
+        }
+    },{
+        "name": "void detection",
+        "key": "void-detection",
+        "skills": "LabView, MathLab",
+        "img": {
+            "main": {
+                "link": "data/projects/void-detection/thumbnail-mobile.jpg",
+                "type": "image/jpeg"
+            },
+            "alt": {
+                "link": "data/projects/void-detection/thumbnail-mobile.webp",
+                "type": "image/webp"
+            },
+            "pc-main": {
+                "link": "data/projects/void-detection/thumbnail-pc.jpg",
+                "type": "image/jpeg"
+            },
+            "pc-alt": {
+                "link": "data/projects/void-detection/thumbnail-pc.webp",
                 "type": "image/webp"
             }
         }
