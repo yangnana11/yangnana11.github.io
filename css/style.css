@@ -175,6 +175,7 @@ section {
 }
 section .item {
     position: relative;
+    width: 100%;
 }
 section .item::before {
     position: absolute;
@@ -235,17 +236,14 @@ section[social] img {
     display: grid;
     grid-gap: var(--element-margin);
 }
-.job-content .job-content-image-wrap.pc-only img, .job-content .job-content-image-wrap.pc-only video{
-    display: none;
-}
-.job-content-image-wrap.mobile-only {
+.job-content-image-wrap video.mobile-only {
     max-width: 575px;
     margin: 0 auto;
 }
-.job-content .job-content-image-wrap.pc-only::before {
+/* .job-content .job-content-image-wrap.pc-only::before {
     content: "This content is only work for PC version. Please open PC to see the demo";
     display: block;
-}
+} */
 .job-content .job-content-image-wrap video, .job-content .job-content-image-wrap img {
     width: 100%;
     border: 2px solid var(--color4);
@@ -256,21 +254,22 @@ section[social] img {
 }
 .job-content h3{
     color: var(--color4);
-    padding-left: 50px;
+    /* padding-left: 50px;
     text-align: right;
-    margin-bottom: var(--section-margin);
+    margin-bottom: var(--section-margin); */
+    text-transform: capitalize;
 }
 main.container.hide {
     opacity: 0;
     max-height: 1px;
     overflow: hidden;
 }
-.job-content-close {
+/* .job-content-close {
     position: absolute;
-    top: var(--section-margin);
-    left: var(--section-margin);
+    top: 0;
+    left: 0;
     display: block;
-}
+} */
 .job-content-close::before {
     content: "Back";
     position: absolute;
@@ -295,6 +294,14 @@ main.container.hide {
 }
 .job-content-close:hover::after{
     transform: translateX(-10px) rotate(180deg);
+}
+.job-content-menu-container {
+    position: sticky;
+    top: 0;
+    background-color: var(--color6);
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
 }
 @media (min-width: 600px) {
     :root {
@@ -415,6 +422,12 @@ main.container.hide {
     }
     .workplace-wrapper .wp-name {
         padding-bottom: calc(var(--element-margin) / 2);
+    }
+    .job-content video[pc] {
+        display: block;
+    }
+    .job-content video[mobile] {
+        display: none;
     }
     /* .workplace-wrapper .wp-name::after {
         top: calc(50% - 15px);
