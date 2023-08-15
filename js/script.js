@@ -340,7 +340,6 @@ const projects = [
     }
 ];
 window.addEventListener("DOMContentLoaded", function() {
-    console.log({project});
     let content="";
     for (let project of projects) {
         content+=`
