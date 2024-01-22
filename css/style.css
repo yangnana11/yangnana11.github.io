@@ -19,8 +19,16 @@ section {
 .top-page {
     width: 100%;
     padding: var(--section-margin) 0 calc(var(--section-margin) + 50px);
-    background-color: var(--color4);
-    color: var(--color2);    
+    background: var(--color4);
+    background: linear-gradient(35deg, rgba(2,0,36,1) 0%, rgb(55 9 121) 65%, rgb(71 0 255) 100%);
+    color: var(--color2);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-wrap img {
+    display: none;
 }
 .page-heading {
     font-size: 50px;
@@ -34,7 +42,7 @@ section {
 }
 .page-desp {
     color: var(--color5);
-    text-align: center;
+    /* text-align: center; */
 }
 .job-title-group-wrapper {
     /* color: var(--border-color); */
@@ -441,5 +449,14 @@ main.container.hide {
     }
     .job-content .job-content-image-wrap.pc-only::before {
         display: none;
+    }
+    .top-wrap {
+        display: grid;
+        grid-template-columns: auto 285px;
+        gap: var(--section-margin);
+        align-items: center;
+    }
+    .top-wrap img {
+        display: block;
     }
 }

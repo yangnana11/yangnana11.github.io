@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Dancing+Script:wght@400;500;600&family=Comfortaa:wght@300;400;500;600;700&display=swap');
 :root {
     --border-color: #f92c85;
     --text-color: #5ebec4;
@@ -7,7 +7,7 @@
     --color2: #f1f1f3;
     --color3: #ff6e6c;
     --color4: #67568c;
-    --color5: #fbdd74;
+    --color5: #fbdd74; 
     --color6: #f8e8ae;
     --section-margin: 2.3rem;
     --element-margin: 1.3rem;
@@ -19,6 +19,6 @@
     --font-small: 14px;
     --font-xsmall: 12px;
     --font-family: 'Comfortaa', cursive;
-    --font-family2: 'Caramel', cursive;
+    --font-family2: 'Dancing Script', cursive;
     --picture-width: 100%;
 }
