@@ -18,7 +18,7 @@ section {
 }
 .top-page {
     width: 100%;
-    padding: var(--section-margin) 0 calc(var(--section-margin) + 50px);
+    padding: var(--section-margin) var(--section-margin) calc(var(--section-margin) + 50px);
     background: var(--color4);
     background: linear-gradient(35deg, rgba(2,0,36,1) 0%, rgb(55 9 121) 65%, rgb(71 0 255) 100%);
     color: var(--color2);
@@ -311,6 +311,29 @@ main.container.hide {
     justify-content: space-between;
     z-index: 9;
 }
+section[personal-project] {
+    background-color: var(--color6);
+}
+.personal-project {
+    padding: var(--element-margin) 0;
+    display: grid;
+    gap: var(--element-margin);
+}
+.personal-project a {
+    text-decoration: none;
+}
+.personal-project a:visited {
+    color: var(--color1);
+}
+.personal-project iframe {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: none;
+}
+.personal-project:not(:first-child) {
+    border-top: 1px solid var(--color4);
+}
 @media (min-width: 600px) {
     :root {
         --picture-width: calc(50vw - var(--section-margin) - var(--element-margin));
@@ -459,4 +482,10 @@ main.container.hide {
     .top-wrap img {
         display: block;
     }
+    .personal-project:hover a {
+        color: var(--color3);
+    }
+    /* .personal-project:hover iframe {
+        display: block;
+    } */
 }
