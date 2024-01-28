@@ -1,5 +1,15 @@
 [
     {
+        "name": "SHP Staff log",
+        "key": "staff-log",
+        "skills": "HTML, NodeJS, JQuery, AWS, MySQL, RestAPI, CSS",
+        "thumbnails": {
+            "main": {
+                "link": "data/project/staff-log/login.png"
+            }
+        }
+    },
+    {
         "name": "superhairpieces",
         "key": "superhairpieces",
         "skills": "HTML, CSS, JS, JQuery, PHP, NodeJS, AWS, MySQL, RestAPI, Chrome Extension, BigCommerce, HandleBars, GraphQL",

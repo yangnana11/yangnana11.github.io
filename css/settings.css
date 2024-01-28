@@ -9,6 +9,8 @@
     --color4: #67568c;
     --color5: #fbdd74; 
     --color6: #f8e8ae;
+    --color7: #f0e2af;
+    --color8: #eca7a6;
     --section-margin: 2.3rem;
     --element-margin: 1.3rem;
     --border-radius: 20px;
@@ -21,4 +23,5 @@
     --font-family: 'Comfortaa', cursive;
     --font-family2: 'Dancing Script', cursive;
     --picture-width: 100%;
+    --background-element-size: min(40vh, 70vw);
 }

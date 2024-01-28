@@ -1,5 +1,39 @@
 const projects = [
     {
+        "name": "SHP staff log",
+        "key": "staff-log",
+        "skills": "HTML, CSS, JS, JQuery, NodeJS, AWS, MySQL, RestAPI",
+        "thumbnails": {
+            "main": {
+                "link": "data/projects/staff-log/list.png",
+                "type": "image/png"
+            }
+        },
+        "description": [
+            "A platform to sign in and sign out for checking the working hours.",
+            "* There is no mobile version"
+        ],
+        "images": [
+            {
+                "pc": "data/projects/staff-log/login.png"
+            },
+            {
+                "pc": "data/projects/staff-log/list.png"
+            },
+            {
+                "pc": "data/projects/staff-log/edit.png"
+            },
+            {
+                "pc": "data/projects/staff-log/report.png"
+            }
+        ],
+        "videos": [
+            {
+                "pc": "data/projects/staff-log/log.mp4"
+            }
+        ]
+    },
+    {
         "name": "superhairpieces",
         "key": "superhairpieces",
         "skills": "HTML, CSS, JS, JQuery, PHP, NodeJS, AWS, MySQL, RestAPI, Chrome Extension, BigCommerce, HandleBars, GraphQL",
@@ -339,6 +373,22 @@ const projects = [
         ]
     }
 ];
+const credentials = [
+    "backend-api.png",
+    "data-visualization.png",
+    "frontend-libraries.png",
+    "ibm-blockchain-foundation.png",
+    "ibm-blockchain-platform.png",
+    "info-secure-assurance.png",
+    "js.png",
+    "js-data-structures.png",
+    "js-sql.png",
+    "legacy-full-stack.png",
+    "mysql.png",
+    "php.png",
+    "reponsive-website.png",
+    "sql.png"
+]
 window.addEventListener("DOMContentLoaded", function() {
     let content="";
     for (let project of projects) {
@@ -352,7 +402,7 @@ window.addEventListener("DOMContentLoaded", function() {
             <picture>
                 ${project.thumbnails["pc-alt"] ? `<source media="(min-width:600px)" type="${project.thumbnails["pc-alt"].type}" srcset="${project.thumbnails["pc-alt"].link}">` : ""}
                 ${project.thumbnails["pc-main"] ? `<source media="(min-width:600px)" type="${project.thumbnails["pc-main"].type}" srcset="${project.thumbnails["pc-main"].link}">` : ""}
-                <source type="${project.thumbnails.alt.type}" srcset="${project.thumbnails.alt.link}">
+                ${project.thumbnails.alt ? `<source type="${project.thumbnails.alt.type}" srcset="${project.thumbnails.alt.link}">` : ""}
                 <img loading="lazy" src="${project.thumbnails.main.link}" alt="${project.name}">
             </picture>
             <div class="project-arrow-container"></div>
@@ -360,6 +410,11 @@ window.addEventListener("DOMContentLoaded", function() {
         `;
     }
     $(".project-wrapper").html(content);
+    let creContent="";
+    for (const cre of credentials) {
+        creContent+=`<img src="data/credentials/${cre}"/>`
+    }
+    $(".credential-wrapper").html(creContent+creContent)
     let mainPos = 0;
     $(".project-wrapper .project-arrow-container, .project-wrapper picture").on("click", function() {                
         let section = $(this).parents(".project-content-wrapper.item").attr("section");

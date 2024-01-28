@@ -26,6 +26,62 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    /* min-height: 60vh;
+    overflow: hidden; */
+}
+.top-gradient {
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: background-rotate 8s linear infinite;
+}
+.top-gradient::before,
+.top-gradient::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+}
+.top-gradient::before {
+    background-color: var(--color7);
+    /* animation: background-run1 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite; */
+    right: -25%;
+    top: -25%;
+}
+.top-gradient::after {
+    background-color: var(--color8);
+    /* animation: background-run2 5s linear infinite; */
+    left: -25%;
+    bottom: -25%;
+}
+@keyframes background-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.top-blur-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(450px);
+    z-index: 2;
+}
+.top-wrap {
+    z-index: 3;
 }
 .top-wrap img {
     display: none;
@@ -211,6 +267,27 @@ section .item::after {
 }
 section[social], section[code-challenge] {
     background-color: var(--color4);
+}
+section[code-challenge] .section-title {
+    color: var(--color2);
+}
+.credential-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.credential-wrapper {
+    display: flex;
+    white-space: nowrap;
+    gap: var(--element-margin);
+}
+.credential-wrapper img {
+    height: 270px;
+    width: auto;
+    animation:translateinfinite 35s linear infinite;
+}
+@keyframes translateinfinite {
+	100% { transform:translateX(-5200px);  }
 }
 section[social] img {
     margin-left: 10px;
